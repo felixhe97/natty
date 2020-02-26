@@ -9,7 +9,6 @@ struct TrieNode {
     std::string nodeVal;
 };
 
-
 // similar to std::map, but trie-based instead
 class TrieMap {
     private:
@@ -21,12 +20,10 @@ class TrieMap {
          */
         TrieMap(void);
 
-
         /**
          * Destructor
          */
         ~TrieMap(void);
-
 
         /**
          * Specific for NAT, takes in ip:port, and inserts that into Trie.
@@ -37,7 +34,6 @@ class TrieMap {
          */
         void insertNAT(const std::string& ipAndPort1,
                 const std::string& ipAndPort2);
-
 
         /**
          * Specific for NAT, returns the converted ip:port, if input ip:port

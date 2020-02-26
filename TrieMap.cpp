@@ -14,7 +14,6 @@ TrieMap::TrieMap()
     this->head->nodeVal = "";
 }
 
-
 void recursiveDelete(TrieNode *t)
 {
     for (auto &p : t->edges) {
@@ -23,12 +22,10 @@ void recursiveDelete(TrieNode *t)
     delete t;
 }
 
-
 TrieMap::~TrieMap()
 {
     recursiveDelete(this->head);
 }
-
 
 void TrieMap::insertNAT(const std::string& ipAndPort1,
         const std::string& ipAndPort2)
@@ -68,7 +65,6 @@ void TrieMap::insertNAT(const std::string& ipAndPort1,
         tempNode->nodeVal = ipAndPort2;
     }
 }
-
 
 std::string TrieMap::retrieveNAT(const std::string &ipAndPort)
 {

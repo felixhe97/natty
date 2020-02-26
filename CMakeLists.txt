@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 3.10)
 
-project(natty VERSION 0.1)
+set(CMAKE_CXX_STANDARD 14)
+
+project(natty VERSION 0.2)
 
 add_executable(natty main.cpp)
-target_sources(natty PRIVATE TrieMap.cpp TrieMap.cpp)
+target_sources(natty PRIVATE TrieMap.cpp)
