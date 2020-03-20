@@ -32,14 +32,3 @@ always translated to their negative representations, while still being an
 edge in the trie.
 
 Developed on Ubuntu 18.04.
-
-TODO:
--could have used a smaller data type than int for node edges
--unit-test with GoogleTest
--TrieMap class following proper C++ class conventions
--generalize TrieMap to a Trie class
--add better documentation and doc generator
--perf and profile
-
-
-
