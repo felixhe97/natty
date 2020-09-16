@@ -14,7 +14,7 @@ TrieMap::TrieMap()
     this->head->nodeVal = "";
 }
 
-void recursiveDelete(TrieNode *t)
+static void recursiveDelete(TrieNode *t)
 {
     for (auto &p : t->edges) {
         recursiveDelete(p.second);

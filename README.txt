@@ -18,7 +18,7 @@ any
 FLOW input file: ip:port
 
 For each line/ip:port of FLOW, will return the mapping as specified in NAT,
-else returns no mapping message.
+else returns no mapping message. Output will appear in file named OUTPUT.
 
 Implementation Details:
 
@@ -30,5 +30,3 @@ along with being INT_MIN as a trie edge if "*" is a port. To specify the
 differences between a port number and an ipv4 component, the port numbers are
 always translated to their negative representations, while still being an
 edge in the trie.
-
-Developed on Ubuntu 18.04.
